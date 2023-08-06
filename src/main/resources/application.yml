@@ -1,0 +1,19 @@
+logging:
+  level:
+    root: DEBUG
+spring:
+  application:
+    name: REVIEW_API
+  profiles.actives: dev
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddlAuto: create
+    dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
+jwt:
+  secret: harshasecret
+server:
+  port: 8090
